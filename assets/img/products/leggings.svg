@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="bg-leggings" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F1EFE9"/>
+    </radialGradient>
+    <clipPath id="clip-leggings">
+      <polygon points="34,24 66,24 64,86 54,86 50,52 46,86 36,86" fill="__FILL__"/>
+    </clipPath>
+  </defs>
+  <rect width="100" height="100" fill="url(#bg-leggings)"/>
+  <ellipse cx="50" cy="86" rx="26" ry="4.5" fill="#15151A" opacity="0.14"/>
+  <g>
+    <polygon points="34,24 66,24 64,86 54,86 50,52 46,86 36,86" fill="#15151A"/>
+    <rect x="0" y="0" width="100" height="50" fill="#ffffff" opacity="0.22" clip-path="url(#clip-leggings)"/>
+    <rect x="20" y="55" width="80" height="45" fill="#000000" opacity="0.16" clip-path="url(#clip-leggings)"/>
+  </g>
+  <rect x="34" y="20" width="32" height="6" fill="#15151A"/>
+  <line x1="40" y1="30" x2="38" y2="80" stroke="#B0272B" stroke-width="1.4" opacity="0.85"/>
+  <line x1="60" y1="30" x2="62" y2="80" stroke="#B0272B" stroke-width="1.4" opacity="0.85"/>
+  <circle cx="12" cy="90" r="4.5" fill="#E32227"/>
+</svg>

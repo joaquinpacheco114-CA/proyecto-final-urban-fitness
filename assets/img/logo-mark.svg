@@ -1,0 +1,13 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="ufLogoTitle">
+  <title id="ufLogoTitle">Urban Fitness</title>
+  <circle cx="32" cy="32" r="31" fill="#15151A"/>
+  <circle cx="32" cy="32" r="31" fill="none" stroke="#ECE9E1" stroke-width="1.5" opacity="0.5"/>
+  <!-- U -->
+  <rect x="13" y="17" width="6" height="29" fill="#E32227"/>
+  <rect x="13" y="40" width="17" height="6" fill="#E32227"/>
+  <rect x="24" y="17" width="6" height="23" fill="#E32227"/>
+  <!-- F -->
+  <rect x="35" y="17" width="6" height="29" fill="#ECE9E1"/>
+  <rect x="35" y="17" width="16" height="6" fill="#ECE9E1"/>
+  <rect x="35" y="28" width="13" height="6" fill="#ECE9E1"/>
+</svg>

@@ -1,0 +1,45 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.contact-info-list {
+  li {
+    @include flex(row, flex-start, flex-start, $space-3);
+    margin-bottom: $space-4;
+  }
+
+  &__icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    background-color: $color-asphalt;
+    color: $color-chalk;
+    border-radius: $radius-sm;
+    @include flex(row, center, center);
+    font-size: 1.1rem;
+  }
+
+  strong {
+    display: block;
+    font-family: $font-display;
+    font-size: $fs-sm;
+    margin-bottom: 0.15rem;
+  }
+
+  span, a {
+    font-size: $fs-sm;
+    color: $color-ink-soft;
+  }
+}
+
+.map-wrapper {
+  border-radius: $radius-md;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+  border: 1px solid $color-border-light;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+}

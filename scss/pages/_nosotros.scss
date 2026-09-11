@@ -1,0 +1,60 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.team-grid {
+  display: grid;
+  gap: $space-5;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include responsive(sm) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include responsive(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.values-list {
+  display: grid;
+  gap: $space-4;
+  grid-template-columns: 1fr;
+
+  @include responsive(md) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.timeline {
+  border-left: $border-thick solid $color-red;
+  padding-left: $space-4;
+  margin-left: $space-1;
+
+  &__item {
+    position: relative;
+    padding-bottom: $space-5;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: calc(#{$space-4} * -1 - 6px);
+      top: 4px;
+      width: 12px;
+      height: 12px;
+      background-color: $color-red;
+      border: 2px solid $color-paper;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+
+  &__year {
+    font-family: $font-display;
+    color: $color-red;
+    font-size: $fs-sm;
+    display: block;
+    margin-bottom: 0.2rem;
+  }
+}

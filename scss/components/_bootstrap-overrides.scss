@@ -1,0 +1,136 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// ---------- Pastillas de filtro (tienda) ----------
+%pill-base {
+  font-family: $font-display;
+  font-size: $fs-xs;
+  letter-spacing: 0.03em;
+  padding: 0.5rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid $color-border-light;
+  background-color: transparent;
+  color: $color-ink-soft;
+  transition: background-color $transition-fast, color $transition-fast, border-color $transition-fast;
+  @include focus-ring;
+
+  &:hover {
+    border-color: $color-red;
+    color: $color-ink;
+  }
+
+  &.is-active {
+    background-color: $color-asphalt;
+    border-color: $color-asphalt;
+    color: $color-chalk;
+  }
+}
+
+.filter-pill {
+  @extend %pill-base;
+}
+
+// ---------- Paginación ----------
+.pagination-uf {
+  .page-link {
+    font-family: $font-display;
+    color: $color-ink;
+    border: 1px solid $color-border-light;
+    margin-inline: 0.2rem;
+    border-radius: $radius-sm;
+
+    &:hover {
+      background-color: $color-asphalt;
+      color: $color-chalk;
+      border-color: $color-asphalt;
+    }
+  }
+
+  .page-item.active .page-link {
+    background-color: $color-red;
+    border-color: $color-red;
+    color: $color-chalk;
+  }
+}
+
+// ---------- Carousel de testimonios ----------
+.carousel-uf {
+  .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $color-concrete;
+    opacity: 1;
+  }
+
+  .carousel-indicators .active {
+    background-color: $color-red;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 44px;
+    height: 44px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-asphalt;
+    border-radius: 50%;
+    opacity: 0.9;
+  }
+
+  .carousel-control-prev { left: -6px; }
+  .carousel-control-next { right: -6px; }
+
+  @include responsive(md) {
+    .carousel-control-prev { left: -22px; }
+    .carousel-control-next { right: -22px; }
+  }
+}
+
+// ---------- Acordeón (preguntas frecuentes de contacto) ----------
+.accordion-uf {
+  .accordion-item {
+    border: 1px solid $color-border-light;
+    border-radius: $radius-sm;
+    margin-bottom: $space-2;
+    overflow: hidden;
+  }
+
+  .accordion-button {
+    font-family: $font-display;
+    font-size: $fs-sm;
+    color: $color-ink;
+    background-color: $color-card;
+
+    &:not(.collapsed) {
+      background-color: $color-asphalt;
+      color: $color-chalk;
+      box-shadow: none;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 3px rgba($color-red, 0.2);
+    }
+
+    &::after {
+      filter: hue-rotate(0deg);
+    }
+  }
+
+  .accordion-body {
+    font-size: $fs-sm;
+    color: $color-ink-soft;
+  }
+}
+
+// ---------- Badge de categoría ----------
+.badge-uf {
+  display: inline-block;
+  font-family: $font-display;
+  font-size: $fs-xs;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.7rem;
+  border-radius: $radius-sm;
+  background-color: $color-maroon;
+  color: $color-chalk;
+}

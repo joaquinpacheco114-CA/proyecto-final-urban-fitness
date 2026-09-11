@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="t" preserveAspectRatio="xMidYMid slice">
+  <path d="M0,0 L100,0 L100,86 L86,100 L0,100 Z" fill="#3A3A42"/>
+  <polygon points="0,70 30,70 8,100 -20,100" fill="#E32227" opacity="0.9"/>
+  <polygon points="40,25 60,25 64,85 36,85" fill="#ECE9E1"/>
+  <rect x="44" y="14" width="12" height="11" fill="#ECE9E1"/>
+  <rect x="37" y="50" width="26" height="10" fill="#15151A" opacity="0.35"/>
+</svg>

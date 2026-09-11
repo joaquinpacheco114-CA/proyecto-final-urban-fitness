@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="bg-shorts" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F1EFE9"/>
+    </radialGradient>
+    <clipPath id="clip-shorts">
+      <polygon points="30,32 70,32 72,74 56,74 52,52 48,74 28,74" fill="__FILL__"/>
+    </clipPath>
+  </defs>
+  <rect width="100" height="100" fill="url(#bg-shorts)"/>
+  <ellipse cx="50" cy="86" rx="26" ry="4.5" fill="#15151A" opacity="0.14"/>
+  <g>
+    <polygon points="30,32 70,32 72,74 56,74 52,52 48,74 28,74" fill="#3A3A42"/>
+    <rect x="0" y="0" width="100" height="50" fill="#ffffff" opacity="0.22" clip-path="url(#clip-shorts)"/>
+    <rect x="20" y="55" width="80" height="45" fill="#000000" opacity="0.16" clip-path="url(#clip-shorts)"/>
+  </g>
+  <rect x="30" y="28" width="40" height="6" fill="#3A3A42"/>
+  <rect x="30" y="60" width="42" height="3" fill="#E32227" opacity="0.9"/>
+  <circle cx="12" cy="90" r="4.5" fill="#E32227"/>
+</svg>

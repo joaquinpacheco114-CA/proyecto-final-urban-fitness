@@ -1,0 +1,24 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="bg-backpack" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F1EFE9"/>
+    </radialGradient>
+    <clipPath id="clip-backpack">
+      <polygon points="32,36 68,36 72,82 28,82" fill="__FILL__"/>
+    </clipPath>
+  </defs>
+  <rect width="100" height="100" fill="url(#bg-backpack)"/>
+  <ellipse cx="50" cy="86" rx="26" ry="4.5" fill="#15151A" opacity="0.14"/>
+  <g>
+    <polygon points="32,36 68,36 72,82 28,82" fill="#4A1013"/>
+    <rect x="0" y="0" width="100" height="50" fill="#ffffff" opacity="0.22" clip-path="url(#clip-backpack)"/>
+    <rect x="20" y="55" width="80" height="45" fill="#000000" opacity="0.16" clip-path="url(#clip-backpack)"/>
+  </g>
+  <polygon points="36,24 64,24 68,36 32,36" fill="__FILL__" opacity="0.85"/>
+  <polygon points="38,54 62,54 60,74 40,74" fill="#000000" opacity="0.18"/>
+  <polygon points="32,36 24,22 29,19 37,32" fill="#15151A"/>
+  <polygon points="68,36 76,22 71,19 63,32" fill="#15151A"/>
+  <rect x="46" y="60" width="8" height="3" fill="#E32227"/>
+  <circle cx="12" cy="90" r="4.5" fill="#E32227"/>
+</svg>

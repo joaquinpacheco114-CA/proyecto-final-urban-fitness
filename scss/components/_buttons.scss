@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+@use 'sass:color';
+
+// Placeholder base — todas las variantes lo extienden
+%btn-base {
+  @include flex(row, center, center, $space-1);
+  font-family: $font-display;
+  font-size: $fs-sm;
+  font-weight: $fw-medium;
+  letter-spacing: 0.03em;
+  padding: 0.85rem 1.75rem;
+  border-radius: $radius-sm;
+  transition: transform $transition-fast, background-color $transition-base, color $transition-base, border-color $transition-base;
+  white-space: nowrap;
+  @include focus-ring;
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.btn-uf {
+  @extend %btn-base;
+}
+
+.btn-uf--primary {
+  @include button-variant($color-red, $color-chalk, color.adjust($color-red, $lightness: -10%));
+}
+
+.btn-uf--dark {
+  @include button-variant($color-asphalt, $color-chalk, color.adjust($color-asphalt, $lightness: 12%));
+}
+
+.btn-uf--outline {
+  background-color: transparent;
+  color: $color-ink;
+  border: $border-thick solid $color-ink;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-ink;
+    color: $color-chalk;
+  }
+}
+
+.btn-uf--outline-light {
+  background-color: transparent;
+  color: $color-chalk;
+  border: $border-thick solid $color-chalk;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-chalk;
+    color: $color-asphalt;
+  }
+}
+
+.btn-uf--block {
+  width: 100%;
+}
+
+.btn-uf--sm {
+  padding: 0.55rem 1.15rem;
+  font-size: $fs-xs;
+}

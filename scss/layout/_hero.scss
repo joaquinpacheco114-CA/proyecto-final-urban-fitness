@@ -1,0 +1,154 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+  background-color: $color-asphalt;
+  color: $color-chalk;
+  padding-block: $space-6 $space-7;
+  position: relative;
+  overflow: hidden;
+
+  &__grid {
+    display: grid;
+    gap: $space-5;
+    align-items: center;
+
+    @include responsive(lg) {
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: $space-6;
+    }
+  }
+
+  &__eyebrow {
+    color: $color-red;
+    font-family: $font-display;
+    font-size: $fs-sm;
+    letter-spacing: 0.03em;
+    margin-bottom: $space-2;
+    display: inline-block;
+  }
+
+  &__title {
+    color: $color-chalk;
+    margin-bottom: $space-3;
+  }
+
+  &__text {
+    color: rgba($color-chalk, 0.75);
+    font-size: $fs-md;
+    max-width: 46ch;
+    margin-bottom: $space-4;
+  }
+
+  &__actions {
+    @include flex(row, flex-start, center, $space-3);
+    flex-wrap: wrap;
+  }
+
+  &__stats {
+    @include flex(row, flex-start, center, $space-5);
+    margin-top: $space-5;
+    flex-wrap: wrap;
+  }
+
+  &__stat {
+    strong {
+      display: block;
+      font-family: $font-display;
+      font-size: $fs-xl;
+      color: $color-chalk;
+    }
+
+    span {
+      font-size: $fs-xs;
+      color: rgba($color-chalk, 0.6);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+  }
+
+  &__visual {
+    position: relative;
+    aspect-ratio: 4 / 5;
+    display: none;
+
+    @include responsive(lg) {
+      display: block;
+    }
+  }
+
+  &__block {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(155deg, $color-red 0%, $color-red-dark 70%);
+    clip-path: polygon(18% 0, 100% 0, 100% 82%, 82% 100%, 0 100%, 0 18%);
+  }
+
+  &__block-inner {
+    position: absolute;
+    inset: 14% 12%;
+    border: 2px solid rgba($color-chalk, 0.5);
+    clip-path: polygon(18% 0, 100% 0, 100% 82%, 82% 100%, 0 100%, 0 18%);
+    @include flex(column, center, center);
+    text-align: center;
+    padding: $space-4;
+
+    strong {
+      font-family: $font-display;
+      font-size: $fs-4xl;
+      color: $color-chalk;
+      line-height: 1;
+    }
+
+    span {
+      font-family: $font-display;
+      font-size: $fs-sm;
+      letter-spacing: 0.08em;
+      color: rgba($color-chalk, 0.85);
+      margin-top: $space-2;
+    }
+  }
+}
+
+// ---------- Banda tipo "marquee" (cinta en movimiento) ----------
+.marquee {
+  background-color: $color-red;
+  color: $color-asphalt;
+  overflow: hidden;
+  white-space: nowrap;
+  padding-block: 0.65rem;
+
+  &__track {
+    display: inline-block;
+    font-family: $font-display;
+    font-size: $fs-sm;
+    letter-spacing: 0.04em;
+    animation: marquee-scroll 22s linear infinite;
+  }
+
+  &__track span {
+    margin-right: 2.5rem;
+  }
+}
+
+// ---------- Banner de página interna (tienda, nosotros, etc.) ----------
+.page-banner {
+  background-color: $color-asphalt;
+  color: $color-chalk;
+  padding-block: $space-5;
+
+  &__title {
+    color: $color-chalk;
+    margin-bottom: $space-1;
+  }
+
+  .breadcrumb-uf {
+    font-size: $fs-sm;
+    color: rgba($color-chalk, 0.6);
+
+    a {
+      color: rgba($color-chalk, 0.75);
+      &:hover { color: $color-red; }
+    }
+  }
+}

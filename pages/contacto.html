@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Urban Fitness — Escribinos</title>
+  <meta name="description" content="Contactate con Urban Fitness para consultas sobre productos, cambios, envíos o alianzas. Formulario, WhatsApp, mail y ubicación.">
+  <meta name="keywords" content="contacto urban fitness, atención al cliente, cambios y devoluciones, urban fitness whatsapp">
+  <meta name="author" content="Urban Fitness">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:title" content="Contacto | Urban Fitness">
+  <meta property="og:description" content="Escribinos por consultas, cambios, envíos o alianzas.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-uf sticky-top" aria-label="Navegación principal">
+      <div class="container-uf">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../assets/img/logo-mark.svg" alt="Urban Fitness" width="38" height="38">
+          <span class="brand-name">URBAN <strong>FITNESS</strong></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="tienda.html">Tienda</a></li>
+            <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="entrenamiento.html">Entrenamiento</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a></li>
+            <li class="nav-item navbar-cta"><a class="btn-uf btn-uf--primary btn-uf--sm" href="tienda.html">Comprar ahora</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-banner">
+      <div class="container-uf">
+        <nav class="breadcrumb-uf" aria-label="Ruta de navegación">
+          <a href="../index.html">Inicio</a> / <span>Contacto</span>
+        </nav>
+        <h1 class="page-banner__title">Contacto</h1>
+        <p style="color:rgba(236,233,225,.75); margin-bottom:0; max-width:50ch;">¿Consulta, cambio o alianza? Escribinos, te respondemos en menos de 24 horas hábiles.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-heading">
+      <div class="container-uf">
+        <div class="row g-5">
+
+          <div class="col-lg-7">
+            <h2 id="form-heading">Dejanos tu mensaje</h2>
+            <div class="alert alert-success d-none" role="alert" data-form-success>
+              ¡Gracias! Recibimos tu mensaje y te vamos a responder a la brevedad.
+            </div>
+            <form class="form-uf needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre y apellido</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" required>
+                  <div class="invalid-feedback">Contanos tu nombre para poder responderte.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" name="email" required>
+                  <div class="invalid-feedback">Ingresá un email válido.</div>
+                </div>
+                <div class="col-md-6">
+                  <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                  <input type="tel" class="form-control" id="telefono" name="telefono">
+                </div>
+                <div class="col-md-6">
+                  <label for="asunto" class="form-label">Asunto</label>
+                  <select class="form-select" id="asunto" name="asunto" required>
+                    <option value="" selected disabled>Elegí una opción</option>
+                    <option value="producto">Consulta sobre un producto</option>
+                    <option value="cambio">Cambios y devoluciones</option>
+                    <option value="envio">Estado de mi envío</option>
+                    <option value="alianza">Alianzas y embajadores</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                  <div class="invalid-feedback">Elegí un asunto para tu consulta.</div>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" required></textarea>
+                  <div class="invalid-feedback">Escribinos tu consulta.</div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn-uf btn-uf--primary">Enviar mensaje</button>
+                  <p class="form-note mt-2">Al enviar, aceptás que te contactemos por los medios que nos dejaste.</p>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <h2>Otras formas de contacto</h2>
+            <ul class="contact-info-list">
+              <li>
+                <span class="contact-info-list__icon"><i class="bi bi-geo-alt" aria-hidden="true"></i></span>
+                <div>
+                  <strong>Local y showroom</strong>
+                  <span>Av. Santa Fe 2450, CABA, Argentina</span>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info-list__icon"><i class="bi bi-envelope" aria-hidden="true"></i></span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hola@urbanfitness.com.ar">hola@urbanfitness.com.ar</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info-list__icon"><i class="bi bi-whatsapp" aria-hidden="true"></i></span>
+                <div>
+                  <strong>WhatsApp</strong>
+                  <a href="tel:+541155550100">+54 11 5555-0100</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-info-list__icon"><i class="bi bi-clock" aria-hidden="true"></i></span>
+                <div>
+                  <strong>Horarios de atención</strong>
+                  <span>Lunes a viernes de 10 a 19 hs</span>
+                </div>
+              </li>
+            </ul>
+            <div class="map-wrapper" aria-label="Mapa de ubicación de Urban Fitness en Buenos Aires">
+              <iframe src="https://maps.google.com/maps?q=Av.%20Santa%20Fe%20Buenos%20Aires%2C%20Argentina&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Urban Fitness en Buenos Aires"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--alt" aria-labelledby="faq-heading">
+      <div class="container-uf">
+        <div class="section-heading">
+          <span class="section-heading__accent" aria-hidden="true"></span>
+          <h2 id="faq-heading">Preguntas frecuentes</h2>
+        </div>
+        <div class="accordion accordion-uf" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                ¿Cuánto tarda el envío?
+              </button>
+            </h3>
+            <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">En CABA y GBA llega entre 24 y 48 horas hábiles. Al resto del país entre 3 y 7 días hábiles, según la zona.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                ¿Puedo cambiar el talle si no me queda bien?
+              </button>
+            </h3>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Sí, tenés 30 días desde que lo recibís para cambiarlo sin costo, siempre que la prenda no esté usada y conserve sus etiquetas.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                ¿Tienen local físico para probarme la ropa?
+              </button>
+            </h3>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Sí, nuestro showroom está en Av. Santa Fe 2450, CABA, de lunes a viernes de 10 a 19 hs.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                ¿Cómo puedo ser embajador de la marca?
+              </button>
+            </h3>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">Escribinos por este formulario eligiendo "Alianzas y embajadores" y contanos un poco sobre vos y tu comunidad de entrenamiento.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-uf">
+    <div class="container-uf">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="footer-brand">
+            <img src="../assets/img/logo-mark.svg" alt="Urban Fitness" width="34" height="34">
+            <span>URBAN FITNESS</span>
+          </div>
+          <p class="footer-tagline">Indumentaria deportiva pensada para moverte por la ciudad, el gimnasio o donde sea que entrenes.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram de Urban Fitness"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Facebook de Urban Fitness"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="#" aria-label="TikTok de Urban Fitness"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+            <a href="#" aria-label="WhatsApp de Urban Fitness"><i class="bi bi-whatsapp" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2">
+          <h3 class="footer-heading">Navegación</h3>
+          <ul class="footer-links">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="entrenamiento.html">Entrenamiento</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h3 class="footer-heading">Tienda</h3>
+          <ul class="footer-links">
+            <li><a href="tienda.html">Hombre</a></li>
+            <li><a href="tienda.html">Mujer</a></li>
+            <li><a href="tienda.html">Calzado</a></li>
+            <li><a href="tienda.html">Accesorios</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contacto</h3>
+          <ul class="footer-contact">
+            <li><i class="bi bi-geo-alt" aria-hidden="true"></i><span>Av. Santa Fe 2450, CABA, Argentina</span></li>
+            <li><i class="bi bi-envelope" aria-hidden="true"></i><a href="mailto:hola@urbanfitness.com.ar">hola@urbanfitness.com.ar</a></li>
+            <li><i class="bi bi-telephone" aria-hidden="true"></i><a href="tel:+541155550100">+54 11 5555-0100</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Urban Fitness. Todos los derechos reservados.</span>
+        <span>Proyecto final — Desarrollo Web, Coderhouse</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+  <script src="../js/site.js"></script>
+</body>
+</html>

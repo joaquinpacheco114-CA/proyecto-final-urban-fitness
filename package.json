@@ -1,0 +1,13 @@
+{
+  "name": "urban-fitness",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Proyecto final Desarrollo Web (Coderhouse) — sitio estático de 5 páginas para la marca Urban Fitness",
+  "scripts": {
+    "build:scss": "sass scss/main.scss styles/main.css --style=expanded",
+    "watch:scss": "sass --watch scss/main.scss styles/main.css --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.77.0"
+  }
+}

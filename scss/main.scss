@@ -1,0 +1,33 @@
+// =========================================================
+// main.scss
+// Único archivo que se compila. No contiene reglas propias:
+// solo importa los partials del proyecto con @use.
+// =========================================================
+
+// Abstracts (variables y mixins) — usados por el resto de partials
+@use 'abstracts/variables';
+@use 'abstracts/mixins';
+
+// Base
+@use 'base/reset';
+@use 'base/typography';
+
+// Componentes
+@use 'components/buttons';
+@use 'components/navbar';
+@use 'components/cards';
+@use 'components/footer';
+@use 'components/forms';
+@use 'components/bootstrap-overrides';
+
+// Layout
+@use 'layout/hero';
+@use 'layout/sections';
+@use 'layout/animations';
+
+// Páginas
+@use 'pages/home';
+@use 'pages/tienda';
+@use 'pages/nosotros';
+@use 'pages/entrenamiento';
+@use 'pages/contacto';

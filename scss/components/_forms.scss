@@ -1,0 +1,62 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.form-uf {
+  .form-label {
+    font-family: $font-display;
+    font-size: $fs-sm;
+    letter-spacing: 0.02em;
+    color: $color-ink;
+    margin-bottom: 0.4rem;
+  }
+
+  .form-control,
+  .form-select {
+    background-color: $color-card;
+    border: 1px solid $color-border-light;
+    border-radius: $radius-sm;
+    padding: 0.75rem 1rem;
+    font-size: $fs-sm;
+    color: $color-ink;
+    transition: border-color $transition-fast, box-shadow $transition-fast;
+
+    &::placeholder {
+      color: $color-ink-soft;
+      opacity: 0.7;
+    }
+
+    &:focus {
+      border-color: $color-red;
+      box-shadow: 0 0 0 3px rgba($color-red, 0.15);
+    }
+  }
+
+  textarea.form-control {
+    min-height: 140px;
+    resize: vertical;
+  }
+
+  .form-check-input:checked {
+    background-color: $color-red;
+    border-color: $color-red;
+  }
+
+  .invalid-feedback {
+    font-size: $fs-xs;
+  }
+
+  .was-validated .form-control:invalid,
+  .form-control.is-invalid {
+    border-color: #c94a2a;
+  }
+
+  .was-validated .form-control:valid,
+  .form-control.is-valid {
+    border-color: $color-success;
+  }
+}
+
+.form-note {
+  font-size: $fs-xs;
+  color: $color-ink-soft;
+}

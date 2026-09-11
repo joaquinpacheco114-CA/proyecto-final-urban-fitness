@@ -1,0 +1,25 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="bg-jacket" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F1EFE9"/>
+    </radialGradient>
+    <clipPath id="clip-jacket">
+      <polygon points="30,80 26,46 30,34 50,22 70,34 74,46 70,80" fill="__FILL__"/>
+    </clipPath>
+  </defs>
+  <rect width="100" height="100" fill="url(#bg-jacket)"/>
+  <ellipse cx="50" cy="86" rx="26" ry="4.5" fill="#15151A" opacity="0.14"/>
+  <g>
+    <polygon points="30,80 26,46 30,34 50,22 70,34 74,46 70,80" fill="#3A3A42"/>
+    <rect x="0" y="0" width="100" height="50" fill="#ffffff" opacity="0.22" clip-path="url(#clip-jacket)"/>
+    <rect x="20" y="55" width="80" height="45" fill="#000000" opacity="0.16" clip-path="url(#clip-jacket)"/>
+  </g>
+  <polygon points="40,34 50,26 60,34 55,39 50,33 45,39" fill="#15151A"/>
+  <line x1="50" y1="40" x2="50" y2="78" stroke="#15151A" stroke-width="2"/>
+  <polygon points="30,46 16,52 21,68 31,60" fill="__FILL__"/>
+  <polygon points="70,46 84,52 79,68 69,60" fill="__FILL__"/>
+  <rect x="24" y="56" width="6" height="2.4" fill="#E32227"/>
+  <rect x="70" y="56" width="6" height="2.4" fill="#E32227"/>
+  <circle cx="12" cy="90" r="4.5" fill="#E32227"/>
+</svg>

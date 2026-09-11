@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as *;
+
+// Animación nativa 1: cinta de marca en movimiento continuo (usada en .marquee__track)
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+// Animación nativa 2: entrada del bloque diagonal del hero
+@keyframes hero-block-in {
+  from {
+    opacity: 0;
+    transform: translateX(4%) scale(0.92);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+}
+
+.hero__visual {
+  animation: hero-block-in $transition-slow both;
+  animation-delay: 0.15s;
+}
+
+// Animación nativa 3: subrayado que "dibuja" al hacer scroll a la vista
+@keyframes draw-underline {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.section-heading__accent {
+  display: block;
+  width: 64px;
+  height: 4px;
+  background-color: $color-red;
+  margin-bottom: $space-3;
+  transform-origin: left;
+  animation: draw-underline 0.6s ease-out both;
+}

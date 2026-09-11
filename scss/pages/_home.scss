@@ -1,0 +1,52 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.featured-products {
+  &__head {
+    @include flex(row, space-between, flex-end, $space-3);
+    flex-wrap: wrap;
+    margin-bottom: $space-4;
+  }
+}
+
+.category-grid {
+  display: grid;
+  gap: $space-4;
+  grid-template-columns: repeat(2, 1fr);
+
+  @include responsive(md) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.newsletter-box {
+  background-color: $color-ink;
+  color: $color-chalk;
+  border-radius: $radius-md;
+  padding: $space-5;
+
+  @include responsive(lg) {
+    padding: $space-6;
+  }
+
+  form {
+    @include flex(column, flex-start, stretch, $space-2);
+
+    @include responsive(sm) {
+      flex-direction: row;
+    }
+  }
+
+  input[type="email"] {
+    flex: 1;
+    padding: 0.85rem 1.1rem;
+    border-radius: $radius-sm;
+    border: 1px solid rgba($color-chalk, 0.25);
+    background-color: rgba($color-chalk, 0.06);
+    color: $color-chalk;
+
+    &::placeholder {
+      color: rgba($color-chalk, 0.55);
+    }
+  }
+}

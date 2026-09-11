@@ -1,0 +1,22 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <radialGradient id="bg-hoodie" cx="50%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#F1EFE9"/>
+    </radialGradient>
+    <clipPath id="clip-hoodie">
+      <polygon points="32,78 28,48 32,34 50,20 68,34 72,48 68,78" fill="__FILL__"/>
+    </clipPath>
+  </defs>
+  <rect width="100" height="100" fill="url(#bg-hoodie)"/>
+  <ellipse cx="50" cy="86" rx="26" ry="4.5" fill="#15151A" opacity="0.14"/>
+  <g>
+    <polygon points="32,78 28,48 32,34 50,20 68,34 72,48 68,78" fill="#4A1013"/>
+    <rect x="0" y="0" width="100" height="50" fill="#ffffff" opacity="0.22" clip-path="url(#clip-hoodie)"/>
+    <rect x="20" y="55" width="80" height="45" fill="#000000" opacity="0.16" clip-path="url(#clip-hoodie)"/>
+  </g>
+  <polygon points="38,34 50,24 62,34 56,39 50,32 44,39" fill="#4A1013"/>
+  <polygon points="41,58 59,58 57,72 43,72" fill="#000000" opacity="0.18"/>
+  <rect x="46" y="30" width="8" height="3" fill="#E32227"/>
+  <circle cx="12" cy="90" r="4.5" fill="#E32227"/>
+</svg>
