@@ -2,8 +2,8 @@
 
 Sitio web estático de 5 páginas para **Urban Fitness**, marca ficticia de indumentaria deportiva urbana. Proyecto final de la materia **Desarrollo Web** (carrera Full Stack, Coderhouse).
 
-🔗 **Sitio en producción:** _pegar acá el link de Vercel/Netlify una vez desplegado_
-🔗 **Repositorio:** _pegar acá el link del repo de GitHub_
+🔗 **Sitio en producción:** https://comforting-klepon-53d456.netlify.app/
+🔗 **Repositorio:** https://github.com/joaquinpacheco114-CA/proyecto-final-urban-fitness
 
 ## Tecnologías usadas
 
